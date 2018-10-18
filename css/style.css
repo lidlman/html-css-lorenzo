@@ -9,13 +9,15 @@ header,
 main,
 nav,
 p,
-section {
+section,
+body{
   box-sizing : border-box;
 }
 
 body {
-  width  : 90%;
+  width  : 100%;
   margin : auto;
+  min-width:300px ;
 }
 
 aside {
@@ -24,6 +26,8 @@ aside {
   margin-bottom : 50px;
   padding       : 15px;
   background    : #b8e994;
+  flex-grow     :1;
+  flex-shrink   :1;  
 }
 
 header {
@@ -33,12 +37,15 @@ header {
   background      : #e55039;
   flex-wrap       : wrap;
   justify-content : space-around;
+  min-width       : 300px;
 }
 
 nav {
   width      : 100%;
   padding    : 15px;
   background : #f6b93b;
+  min-width: 300px;
+  flex-wrap: wrap
 }
 
 main {
@@ -47,6 +54,8 @@ main {
   margin-bottom : 50px;
   padding       : 15px;
   background    : #F8EFBA;
+  flex-grow     : 1;
+  flex-shrink   :1; 
 }
 
 footer {
@@ -60,8 +69,11 @@ section {
 
 article {
   width      : 50%;
-  padding    : 15pxi;
+  padding    : 15px;
   background : #fffa65;
+  flex-wrap  : wrap;
+  flex-grow  : 1;
+  flex-shrink: 1;
 }
 
 a,
@@ -126,8 +138,8 @@ h3 {
   text-align : center;
 }
 #logo{
-width: 10%;
-height: 10%;
-min-width: 300px;
-
+width: auto;
+height: 100px;
+min-width: 100px;
+right: 250px;
 }
