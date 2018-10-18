@@ -55,8 +55,7 @@ footer {
 }
 
 section {
-  padding    : 15px;
-  background : #FC427B;
+  padding    : 30px;
 }
 
 article {
@@ -72,17 +71,12 @@ h3,
 p {
   font-family : sans-serif;
 }
-
-img {
-  width : 150px;
-}
-
 a p {
   margin         : 0;
-  padding-top    : 15px;
-  padding-right  : 30px;
-  padding-bottom : 15px;
-  padding-left   : 30px;
+  padding-top    : 20px;
+  padding-right  : 40px;
+  padding-bottom : 20px;
+  padding-left   : 40px;
 }
 
 #titreP {
@@ -128,9 +122,12 @@ h3 {
 }
 
 #articleP {
-  width: 100%;
-  text-align: center;
+  width      : 100%;
+  text-align : center;
 }
-#img1 {
-  width: 50%
+#logo{
+width: 10%;
+height: 10%;
+min-width: 300px;
+
 }
