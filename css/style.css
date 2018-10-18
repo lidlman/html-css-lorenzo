@@ -126,3 +126,11 @@ p {
 h3 {
   text-align : center;
 }
+
+#articleP {
+  width: 100%;
+  text-align: center;
+}
+#img1 {
+  width: 50%
+}
