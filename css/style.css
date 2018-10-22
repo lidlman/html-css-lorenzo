@@ -9,6 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  background: rgba(20,20,20,0.2);
 }
 
 aside {
@@ -16,7 +17,7 @@ aside {
   min-width: 210px;
   /*  margin: auto; */
   padding: 15px;
-  background: #b8e994;
+  background: rgba(20,20,20,0.2);
   flex-grow: 1;
   flex-shrink: 1;
   margin-bottom: 25px;
@@ -26,7 +27,7 @@ header {
   display: flex;
   margin-bottom: 50px;
   padding: 15px;
-  background: #e55039;
+  background: rgba(20,20,20,0.2);
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
@@ -37,13 +38,14 @@ nav {
   width: 100%;
   padding: 15px;
   flex-wrap: wrap;
+  background: rgba(20,20,20,0.2);
 }
 
 main {
   width: 70%;
   min-width: 210px;
   padding: 15px;
-  background: #F8EFBA;
+  background: rgba(20,20,20,0.2);
   flex-grow: 1;
   flex-shrink: 1;
   margin-bottom: 25px;
@@ -51,7 +53,7 @@ main {
 
 footer {
   padding: 15px;
-  background: #D6A2E8;
+  background: rgba(20,20,20,0.2);
   min-width: 210px;
 }
 
@@ -66,7 +68,7 @@ article {
   width: 50%;
   padding: 15px;
   /*   margin: auto; */
-  background: #fffa65;
+  background: rgba(20,20,20,0.2);
   flex-grow: 1;
   flex-shrink: 1;
   min-width: 210px;
@@ -110,10 +112,6 @@ h2 {
   flex-wrap: wrap;
 }
 
-a:hover {
-  background: olive;
-}
-
 h2,
 h3,
 h1 {
@@ -127,30 +125,47 @@ main section {
   flex-wrap: wrap;
   min-width: 210px;
   align-content: stretch;
+  justify-content: center;
 }
 
-  p {
-    padding: 15px;
-    text-align: center;
-  }
+p {
+  padding: 15px;
+  text-align: center;
+}
 
-  h3 {
-    text-align: center;
-  }
+h3 {
+  text-align: center;
+}
 
-  #articleP {
-    width: 100%;
-    text-align: center;
-  }
+#articleP {
+  width: 100%;
+  text-align: center;
+}
 
-  #logo {
-    width: 10%;
-    height: auto;
-    min-width: 100px;
-  }
+#logo {
+  width: 10%;
+  height: auto;
+  min-width: 100px;
+}
 
-  article img {
-    width: 100%;
-    object-fit: cover;
-    max-height: 500px;
-  }
+article img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 500px;
+}
+
+section#formP {
+  width: 50%;
+flex-shrink: 1;
+flex-grow: 1;
+}
+
+label, button {
+font-family: sans-serif;
+}
+
+input{
+margin-top: 2px;
+margin-bottom: 5px;
+}
+
