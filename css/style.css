@@ -114,15 +114,18 @@ a:hover {
   background: olive;
 }
 
-h2,h3,h1 {
+h2,
+h3,
+h1 {
   width: 100%;
 }
 
-/* section section {
+/* ATTENTION SI ON AJOUTE DES SECTIONS */
+section section {
   display: flex;
   flex-wrap: wrap;
   min-width: 210px;
-} */
+}
 
 p {
   padding: 15px;
