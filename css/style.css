@@ -31,7 +31,6 @@ header {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  padding: 20px;
 }
 
 nav {
@@ -72,6 +71,10 @@ article {
   flex-grow: 1;
   flex-shrink: 1;
   min-width: 210px;
+}
+
+article p {
+  text-align: justify;
 }
 
 a,
@@ -169,3 +172,13 @@ margin-top: 2px;
 margin-bottom: 5px;
 }
 
+/*insertion tableau dans aside*/
+
+table {
+  width: 100%;
+}
+
+th,td{
+  background: rgba(20,20,20,0.2);
+  padding: 10px;
+}
