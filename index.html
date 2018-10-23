@@ -135,18 +135,25 @@
         <section id="formP">
           <h3>Formulaire de contact</h3>
           <form action="#" method="get">
+            
             <label for="nom">Nom</label><br>
-            <input name="nom" type="text" maxlength="5"><br>
+            <input name="nom" type="text" maxlength="10" placeholder="Nom" required><br>
+            
             <label for="prenom">Prenom</label><br>
-            <input name="prenom" type="text" maxlength="5"><br>
+            <input name="prenom" type="text" maxlength="10" placeholder="Prénom" required><br>
+            
             <label for="Email">E-mail</label><br>
-            <input name="Email" type="email"><br>
+            <input name="Email" type="email" placeholder="Email" required><br>
+            
             <label for="Tel">Tel</label><br>
-            <input name="Tel" type="tel"><br>
+            <input name="Tel" placeholder="Numéro de téléphone" type="tel"required> <br>
+            
             <label for="Message">Message</label><br>
-            <textarea name="Message"></textarea><br>
+            <textarea name="Message" placeholder="Veuillez entrer un message" required></textarea><br>
+            
             <button type="submit">Confirmer</button>
-          </form>
+          
+        </form>
         </section>
       </section>
     </main>

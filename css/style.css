@@ -9,7 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  background: rgba(20,20,20,0.2);
+  background: rgba(20, 20, 20, 0.2);
 }
 
 aside {
@@ -17,7 +17,7 @@ aside {
   min-width: 210px;
   /*  margin: auto; */
   padding: 15px;
-  background: rgba(20,20,20,0.2);
+  background: rgba(20, 20, 20, 0.2);
   flex-grow: 1;
   flex-shrink: 1;
   margin-bottom: 25px;
@@ -27,7 +27,7 @@ header {
   display: flex;
   margin-bottom: 50px;
   padding: 15px;
-  background: rgba(20,20,20,0.2);
+  background: rgba(20, 20, 20, 0.2);
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
@@ -35,16 +35,30 @@ header {
 
 nav {
   width: 100%;
-  padding: 15px;
+  padding: 10px;
   flex-wrap: wrap;
-  background: rgba(20,20,20,0.2);
+}
+
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+aside nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+aside nav a p {
+  border-bottom: 2px solid rgba(20, 20, 20, 0.1);
 }
 
 main {
   width: 70%;
   min-width: 210px;
   padding: 15px;
-  background: rgba(20,20,20,0.2);
+  background: rgba(20, 20, 20, 0.2);
   flex-grow: 1;
   flex-shrink: 1;
   margin-bottom: 25px;
@@ -52,7 +66,7 @@ main {
 
 footer {
   padding: 15px;
-  background: rgba(20,20,20,0.2);
+  background: rgba(20, 20, 20, 0.2);
   min-width: 210px;
 }
 
@@ -67,7 +81,6 @@ article {
   width: 50%;
   padding: 15px;
   /*   margin: auto; */
-  background: rgba(20,20,20,0.2);
   flex-grow: 1;
   flex-shrink: 1;
   min-width: 210px;
@@ -85,12 +98,22 @@ p {
   font-family: sans-serif;
 }
 
+a{
+  text-decoration: none;
+}
+
 a p {
   margin: 0;
   padding-top: 20px;
   padding-right: 40px;
   padding-bottom: 20px;
   padding-left: 40px;
+  color: white;
+  background: rgba(20, 20, 20, 0.2);
+}
+
+a:hover{
+  background: rgba(20, 20, 20, 0.3);
 }
 
 #titreP {
@@ -110,11 +133,6 @@ h2 {
   margin-bottom: 50px;
 }
 
-#navP {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 h2,
 h3,
 h1 {
@@ -129,6 +147,8 @@ main section {
   min-width: 210px;
   align-content: stretch;
   justify-content: center;
+  background: rgba(20, 20, 20, 0.2);
+  margin-bottom: 20px;
 }
 
 p {
@@ -159,26 +179,51 @@ article img {
 
 section#formP {
   width: 50%;
-flex-shrink: 1;
-flex-grow: 1;
+  flex-shrink: 1;
+  flex-grow: 1;
 }
 
-label, button {
-font-family: sans-serif;
+form {
+  width: 80%;
 }
 
-input{
-margin-top: 2px;
-margin-bottom: 5px;
+input,
+textarea {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  margin-top: 2px;
+  margin-bottom: 5px;
 }
 
+textarea {
+  min-height: 100px;
+}
+
+label,
+button {
+  font-family: sans-serif;
+}
+
+button {
+  padding: 10px;
+  background: rgba(20, 20, 20, 0.3);
+  border: none;
+  color: white;
+  
+}
+
+button:hover{
+  background: rgba(0, 60, 0, 0.5);
+}
 /*insertion tableau dans aside*/
 
 table {
   width: 100%;
 }
 
-th,td{
-  background: rgba(20,20,20,0.2);
+th,
+td {
+  background: rgba(20, 20, 20, 0.2);
   padding: 10px;
 }
