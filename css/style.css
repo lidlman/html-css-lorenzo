@@ -4,7 +4,6 @@
 
 body {
   width: 95%;
-  margin: auto;
   min-width: 320px;
   display: flex;
   flex-direction: column;
@@ -16,11 +15,11 @@ aside {
   width: 30%;
   min-width: 210px;
   /*  margin: auto; */
-  padding: 15px;
+  padding: 5px;
   background: rgba(20, 20, 20, 0.2);
   flex-grow: 1;
   flex-shrink: 1;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
 }
 
 header {
@@ -75,14 +74,18 @@ section {
   flex-wrap: wrap;
   flex-grow: 1;
   flex-shrink: 1;
+  justify-content: space-around;
 }
-.articleligne p{
+
+.articleligne p {
   width: 40%;
 }
-.articleligne h3{
+
+.articleligne h3 {
   width: 100%;
 }
-.articleligne img{
+
+.articleligne img {
   width: 40%;
   height: auto;
   object-fit: cover;
@@ -116,7 +119,7 @@ article p {
   text-align: justify;
 }
 
-a,
+nav a,
 h1,
 h2,
 h3,
@@ -124,11 +127,11 @@ p {
   font-family: sans-serif;
 }
 
-a{
+nav a {
   text-decoration: none;
 }
 
-a p {
+nav a p {
   margin: 0;
   padding-top: 20px;
   padding-right: 40px;
@@ -138,7 +141,7 @@ a p {
   background: rgba(20, 20, 20, 0.2);
 }
 
-a:hover{
+a:hover {
   background: rgba(20, 20, 20, 0.3);
 }
 
@@ -178,7 +181,7 @@ main section {
 }
 
 p {
-  padding: 15px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -201,6 +204,26 @@ article img {
   width: 100%;
   object-fit: cover;
   max-height: 500px;
+}
+
+
+
+#homepage {
+  position: fixed;
+  margin-left:95%;
+  margin-top: 90vh;
+  width: 50px;
+  height: 50px;
+  background: white;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#arrowimg {
+  width: 20px;
+  height: 20px;
 }
 
 section#formP {
@@ -236,32 +259,56 @@ button {
   background: rgba(20, 20, 20, 0.3);
   border: none;
   color: white;
-  
+
 }
 
-button:hover{
+button:hover {
   background: rgba(0, 60, 0, 0.5);
 }
+
 /*insertion tableau dans aside*/
 
 table {
-  width: 100%;
+  width: 80%;
+  justify-content: center;
+  margin-right: 20px;
 }
 
 th,
 td {
   background: rgba(20, 20, 20, 0.2);
-  padding: 10px;
 }
 
-#sectionchild_1 article:nth-child(2){
+#sectionchild_1 article:nth-child(2) {
   order: 2;
   flex: 1;
-  background: red;
 }
-#sectionchild_1 article:nth-child(3){
-  order:1 ;
-  flex: 4;
-  background: greenyellow;
 
+#sectionchild_1 article:nth-child(3) {
+  order: 1;
+  flex: 4;
+}
+
+@media screen and (max-width:768px) and (max-height:1024px) and (orientation:portrait) {
+  body {
+    background: darkcyan;
+  }
+}
+
+@media screen and (max-width:1024px) and (max-height:768px) and (orientation:landscape) {
+  body {
+    background: darkcyan;
+  }
+}
+
+@media screen and (max-width:360px) and (max-height:640px) and (orientation:portrait) {
+  body {
+    background: darkgreen;
+  }
+}
+
+@media screen and (max-width:640px) and (max-height:360px) and (orientation:landscape) {
+  body {
+    background: darkgreen;
+  }
 }
